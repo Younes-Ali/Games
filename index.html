@@ -3,39 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>X/O</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @keyframes smoothEntry {
-            0% {
-                transform: translateX(-100%);
-                opacity: 0;
-            }
-            100% {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-        .move-element {
-            animation: smoothEntry 0.5s ease-out;
-            animation-duration: 2s;
-        }
-    </style>
+    <title>GAMES</title>
+    <link rel="stylesheet" href="./assist/style/index.css" \>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" \>
 </head>
-<body class="m-auto text-white bg-zinc-400 my-5 font-mono flex justify-center flex-wrap w-full h-screen ">
-    <div class="mt-40 text-6xl font-bold uppercase w-full text-center move-element">this is X/O game</div>
-    <div class="border-4 border-black w-[70vmin] h-[70vmin] md:w-96 md:h-96 grid grid-rows-3 grid-cols-3 gap-1 p-1 mt-10 mb-10 move-element">
-        <div id="b1" onclick="choise(this)" class="border-2 text-center hover:bg-cyan-400 text-6xl md:text-8xl font-serif border-black uppercase bg-cyan-600 flex justify-center items-center"></div>
-        <div id="b2" onclick="choise(this)" class="border-2 text-center hover:bg-cyan-400 text-6xl md:text-8xl font-serif border-black uppercase bg-cyan-600 flex justify-center items-center"></div>
-        <div id="b3" onclick="choise(this)" class="border-2 text-center hover:bg-cyan-400 text-6xl md:text-8xl font-serif border-black uppercase bg-cyan-600 flex justify-center items-center"></div>
-        <div id="b4" onclick="choise(this)" class="border-2 text-center hover:bg-cyan-400 text-6xl md:text-8xl font-serif border-black uppercase bg-cyan-600 flex justify-center items-center"></div>
-        <div id="b5" onclick="choise(this)" class="border-2 text-center hover:bg-cyan-400 text-6xl md:text-8xl font-serif border-black uppercase bg-cyan-600 flex justify-center items-center"></div>
-        <div id="b6" onclick="choise(this)" class="border-2 text-center hover:bg-cyan-400 text-6xl md:text-8xl font-serif border-black uppercase bg-cyan-600 flex justify-center items-center"></div>
-        <div id="b7" onclick="choise(this)" class="border-2 text-center hover:bg-cyan-400 text-6xl md:text-8xl font-serif border-black uppercase bg-cyan-600 flex justify-center items-center"></div>
-        <div id="b8" onclick="choise(this)" class="border-2 text-center hover:bg-cyan-400 text-6xl md:text-8xl font-serif border-black uppercase bg-cyan-600 flex justify-center items-center"></div>
-        <div id="b9" onclick="choise(this)" class="border-2 text-center hover:bg-cyan-400 text-6xl md:text-8xl font-serif border-black uppercase bg-cyan-600 flex justify-center items-center"></div>
+<body class="d-flex flex-column align-items-center justify-content-center bg-dark">
+    <h1 class="text-white fw-bold">OUR GAMES</h1>
+    <div class="xo d-flex align-items-center justify-content-center w-75">
+        <a href="./assist/html/xo.html">
+            <button class="rounded bg-success text-black fs-3 fw-bold">play</button>
+        </a>
     </div>
-    <div id="state" class="mt-0 text-6xl font-bold uppercase w-full text-center"></div>
-    <script src="main.js"></script>
+    <div class="rps d-flex align-items-center justify-content-center w-75">
+        <button class="rounded bg-success text-black fs-3 fw-bold">play</button>
+    </div>
 </body>
 </html>

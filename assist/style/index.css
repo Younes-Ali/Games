@@ -1,0 +1,61 @@
+body{
+    margin: 20px;
+}
+
+h1{
+    margin-top: 100px !important;
+    font-size: 3rem;
+}
+.xo,.rps{
+    border: 2px solid white;
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 150px;
+    background-size:contain;
+    background-position: center;
+    border-radius: 24px;
+    button{
+        padding: 5px 30px ;
+        visibility: hidden;
+    }
+}
+.xo{
+    background-image: url("../images/backgroundXO.jpg");
+    &:hover{
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.687)), url("../images/backgroundXO.jpg");
+    }
+    &:hover button{
+        visibility: visible;
+        animation: smoothEntry 0.5s ease-out;
+        animation-duration: 0.5s;
+    }
+}
+.rps{
+    background-image: url("../images/backgroundRPS.jpg");
+    &:hover{
+        transform: scale(1.05);
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.687)), url("../images/backgroundRPS.jpg");
+    }
+    &:hover button{
+        visibility: visible;
+        animation: smoothEntry 0.5s ease-out;
+        animation-duration: 0.5s;
+    }
+}
+
+@keyframes smoothEntry {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+}
