@@ -1,0 +1,17 @@
+h1,h2{
+    max-width: 80%;
+}
+
+.main{
+    height: 30dvh;
+    span{
+        font-size: 6rem;
+        @media screen and (max-width: 767px) {
+            font-size: 1.5rem;
+        }
+    }
+    img{
+        max-width: 30%;
+    }
+}
+
