@@ -32,7 +32,6 @@ let checkWin = () => {
     loudingSpan.innerHTML = winner;
     loudingSpan.classList.add('animate__fadeInUp');
     setTimeout(() => loudingSpan.classList.remove('animate__fadeInUp'), 500);
-    setTimeout(() => location.reload(), 3000);
 }
 
 let louding = () => {
